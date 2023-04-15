@@ -2,25 +2,26 @@
 
 public class Gameplay : ModuleRules
 {
-    public Gameplay(ReadOnlyTargetRules Target) : base(Target)
-    {
-        PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+	public Gameplay(ReadOnlyTargetRules Target) : base(Target)
+	{
+		bEnforceIWYU = true;
+		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
-        PublicDependencyModuleNames.AddRange(
-            new string[]
-            {
-                "Core",
-            }
-        );
+		PublicDependencyModuleNames.AddRange(
+			new string[]
+			{
+				"Core",
+			}
+		);
 
-        PrivateDependencyModuleNames.AddRange(
-            new string[]
-            {
-                "CoreUObject",
-                "Engine",
-                "Slate",
-                "SlateCore"
-            }
-        );
-    }
+		PrivateDependencyModuleNames.AddRange(
+			new string[]
+			{
+				"CoreUObject",
+				"Engine",
+				"Slate",
+				"SlateCore"
+			}
+		);
+	}
 }

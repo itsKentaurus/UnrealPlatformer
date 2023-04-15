@@ -6,6 +6,7 @@ public class Platform : ModuleRules
 {
 	public Platform(ReadOnlyTargetRules Target) : base(Target)
 	{
+		bEnforceIWYU = true;
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange(new string[]
